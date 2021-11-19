@@ -1,0 +1,13 @@
+{
+  "name": "nft-image-generator",
+  "version": "1.0.0",
+  "description": "Image generator that randomly creates avatars from sets of assets",
+  "main": "index.js",
+  "repository": "git@github.com:izabellewilding/ntf-pfp-image-generator.git",
+  "author": "Izabelle Wilding ",
+  "license": "MIT",
+  "dependencies": {
+    "merge-images": "^2.0.0",
+    "node-gyp": "^8.4.0"
+  }
+}
