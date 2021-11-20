@@ -1,7 +1,7 @@
 const mergeImages = require('merge-images');
 const { Canvas, Image } = require('canvas');
 
-mergeImages(['./body.png', './eyes.png', './mouth.png'], {
+mergeImages(['./BlazerShirt.svg', './Close.svg', './Concerned.png'], {
   Canvas: Canvas,
   Image: Image
 })
