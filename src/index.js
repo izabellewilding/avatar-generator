@@ -4,6 +4,7 @@ const path = require("path");
 const fs = require("fs");
 
 const folderNames = [
+"background",
   "skin",
   "eyebrow",
   "eyes",
@@ -21,8 +22,8 @@ function generateRandomImage(id) {
   function selectAssets(folder) {
     const files = fs.readdirSync(folder);
     // Randomly choose an image from the folder
-    const chosenFile = files[Math.floor(Math.random() * files.length)];
-    return chosenFile;
+    const randomFile = files[Math.floor(Math.random() * files.length)];
+    return randomFile;
   }
 
   const selectedAssetsPaths = folderPaths.map((folderPath) => {
