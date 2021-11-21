@@ -43,7 +43,7 @@
             <use
               class='CustomColor'
               stroke='none'
-              fill='var(--avataaar-hair-color)'
+              fill='black'
               fillRule='evenodd'
               href='#path1'
             />

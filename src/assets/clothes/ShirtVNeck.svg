@@ -11,7 +11,7 @@
         </mask>
         <use
           class='CustomColor'
-          fill='#E6E6E6'
+          fill='purple'
           fillRule='evenodd'
           href='#path1'
         />

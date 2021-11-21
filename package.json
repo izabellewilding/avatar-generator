@@ -10,5 +10,8 @@
     "canvas": "^2.8.0",
     "fs": "^0.0.1-security",
     "merge-images": "^2.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.4.1"
   }
 }

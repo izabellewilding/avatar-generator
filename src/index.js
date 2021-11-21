@@ -4,7 +4,7 @@ const path = require("path");
 const fs = require("fs");
 
 const folderNames = [
-"background",
+  "background",
   "skin",
   "eyebrow",
   "eyes",
@@ -12,6 +12,7 @@ const folderNames = [
   "nose",
   "top",
   "clothes",
+  "accessories",
 ];
 
 const folderPaths = folderNames.map((folderName) => {
@@ -35,7 +36,7 @@ function generateRandomImage(id) {
     Canvas: Canvas,
     Image: Image,
   }).then((b64) => {
-    console.warn(b64);
+    console.warn(selectedAssetsPaths);
 
     const base64Data = b64.replace(/^data:image\/png;base64,/, "");
 
@@ -50,7 +51,7 @@ function generateRandomImage(id) {
   });
 }
 
-Array(25)
+Array(50)
   .fill()
   .map((_, arrayIndex) => {
     generateRandomImage(arrayIndex);
