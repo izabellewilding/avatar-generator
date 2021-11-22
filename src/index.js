@@ -51,7 +51,7 @@ function generateRandomImage(id) {
   });
 }
 
-Array(50)
+Array(1000)
   .fill()
   .map((_, arrayIndex) => {
     generateRandomImage(arrayIndex);
