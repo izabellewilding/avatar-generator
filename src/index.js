@@ -3,6 +3,7 @@ const { Canvas, Image } = require("canvas");
 const path = require("path");
 const fs = require("fs");
 
+
 const folderNames = [
   "background",
   "skin",
@@ -15,9 +16,11 @@ const folderNames = [
   "accessories",
 ];
 
+//generate paths to all subfolders within assets 
 const folderPaths = folderNames.map((folderName) => {
   return path.join(__dirname, `assets/${folderName}`);
 });
+
 
 function generateRandomImage(id) {
   function selectAssets(folder) {
@@ -36,8 +39,6 @@ function generateRandomImage(id) {
     Canvas: Canvas,
     Image: Image,
   }).then((b64) => {
-    console.warn(selectedAssetsPaths);
-
     const base64Data = b64.replace(/^data:image\/png;base64,/, "");
 
     fs.writeFile(
@@ -57,5 +58,4 @@ Array(1000)
     generateRandomImage(arrayIndex);
   });
 
-//TODO: Output number of avatars into folder at a time to display on web page
-//TODO: Skin & BGs
+
